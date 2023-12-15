@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/background_design"
+            android:translationX="-100dp"
+            android:translationY="-100dp"/>
+
+        <ImageView
+            android:layout_marginTop="150dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/background_design"
+            android:translationX="250dp"
+            android:translationY="80dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/login"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LogIn YourSelf"
+                android:textSize="35dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:background="@color/light_color"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:hint="Enter Your Email."
+                android:padding="10dp"
+                android:textSize="30dp"
+                android:drawableStart="@drawable/baseline_email_24"
+                android:drawablePadding="15dp"
+                android:textStyle="bold"
+                android:background="@color/light_color"
+                android:textColorHint="@color/main_color"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:hint="Enter Password."
+                android:padding="10dp"
+                android:textSize="30dp"
+                android:drawableStart="@drawable/lock"
+                android:drawablePadding="15dp"
+                android:textStyle="bold"
+                android:background="@color/light_color"
+                android:textColorHint="@color/main_color"
+                android:inputType="textPassword"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submit_btn"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:background="@color/main_color"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textSize="33dp"
+                android:padding="10dp"
+                android:textColor="@color/white"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
+
+
+
+</ScrollView>
